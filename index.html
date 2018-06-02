@@ -92,6 +92,50 @@
     </ul>
   </section>
 
+  <!--Section Search -->
+  <section class="section section-search blue darken-4 white-text center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>Search Destinations</h3>
+          <div class="input-field">
+            <input type="text" placeholder="Aruba, Cancun, etc..." class="white grey-text autocomplete" id="autocomplete-input">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Section Icon Boxes -->
+
+  <section class="section section-icons grey lighten-4 center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large blue-text darken-4">room</i>
+            <h4>Locations</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, distinctio?</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large blue-text darken-4">store</i>
+            <h4>Travel Shop</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, distinctio?</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large blue-text darken-4">airplanemode_active</i>
+            <h4>Cheap Airfare</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, distinctio?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -109,7 +153,28 @@
         transition: 500,
         interval: 6000
       });
+
+      // init autocomplete
+      $('.autocomplete').autocomplete({
+        data: {
+          "Aruba": null,
+          "Cancun": null,
+          "Mexicio": null,
+          "Florida": null,
+          "California": null,
+          "Jamaica": null,
+          "Bahamas": null,
+          "Europe": null,
+        }
+      });
+
+
+
+
     });
+
+
+
   </script>
 </body>
 
